@@ -3,6 +3,25 @@
 Thanks for contributing! Please follow the conventions below so that
 automated tooling (release-please, changelog generation) keeps working.
 
+## Pre-commit hooks
+
+This repository uses [pre-commit](https://pre-commit.com/) to run linting,
+formatting, and security checks before each commit.
+
+Install pre-commit and set up the hooks:
+
+```bash
+pip install pre-commit
+pre-commit install
+```
+
+After installation, the hooks will run automatically on `git commit`. You can
+also run them manually at any time:
+
+```bash
+pre-commit run --all-files
+```
+
 ## Conventional Commits
 
 This repository uses [Conventional Commits](https://www.conventionalcommits.org/)
